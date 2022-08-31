@@ -1,0 +1,110 @@
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  font-family: Segoe UI;
+  font-size: 27px;
+}
+
+/* header */
+header {
+  text-align: center;
+
+  font-weight: lighter;
+  padding-bottom: 40px;
+}
+/* image logo */
+img {
+  height: 238px;
+  width: 237px;
+}
+/* center_block */
+.center_block {
+  display: flex;
+
+}
+/* carousel */
+.review-carousel {
+  width: 40%;
+  position: relative;
+
+  }
+  .review-carousel h3 {
+    font-size: 23px;
+    padding: 20px;
+    border: 3px solid #4A4646;
+  }
+.carousel-item {
+  background-color: #4A4646;
+  padding: 40px 20px 20px;
+  color: #FFFFFF;
+  display: none;
+
+
+}
+.carousel-item-selected {
+  display: block;
+}
+.carousel-item p {
+  padding-bottom: 60px;
+}
+
+.carousel-nav {
+  background-color: #4A4646;
+  width: 100%;
+  padding: 0 0 20px;
+  text-align: center;
+}
+.carousel-button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.carousel-button-selected {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* form */
+
+.form {
+  width: 60%;
+  border: 3px solid #4A4646;
+
+}
+
+footer {
+  background-color: #4A4646;
+  color: #FFFFFF;
+  padding: 20px;
+  font-size: 16px;
+}
+
+/* phone view */
+
+@media only screen and (max-width: 390px) {
+  h3 {
+    padding: 0 2px;
+  }
+  .center_block {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .form {
+    width: 100%;
+
+  }
+  .review-carousel {
+    width: 100%;
+    font-size: 16px;
+  }
+  footer {
+    background-color: #FFFFFF;
+    font-size: 10px;
+    color: #4A4646;
+  }
+}
